@@ -1,6 +1,7 @@
 import React from "react";
 import Header from "../header/header";
 import Messages from "./messages";
+import Footer from "../footer/footer";
 import SendForm from "./send_form";
 import { useSelector, useDispatch } from "react-redux";
 import Login from "./login";
@@ -16,6 +17,7 @@ const Main = () => {
 
         <Messages />
       </section>
+      <Footer />
     </section>
   );
 };

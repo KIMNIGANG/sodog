@@ -9,6 +9,7 @@ const chatSend = (user, content) => {
     uid: uid(timestamp),
     content: content,
     user: user,
+    time: timestamp,
   });
 };
 

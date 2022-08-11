@@ -16,7 +16,7 @@ const Container = styled.div`
 
 const Input = styled.input`
   width: 77%;
-  font-size: 1.2em;
+  font-size: 1em;
   border: solid 1px;
   border-radius: 1em;
 `;
@@ -44,11 +44,15 @@ const SendForm = () => {
         name="message"
         onChange={changeContent}
         value={content}
+        maxLength="25"
       />
 
       <Button
         onClick={() => {
-          chatSend(username, content);
+          if (content !== "") {
+            chatSend(username, content);
+          }
+          setContent("");
         }}
       >
         Send
