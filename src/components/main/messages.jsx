@@ -2,6 +2,13 @@ import { useEffect, useState } from "react";
 import { React } from "react";
 import { ref, onValue } from "firebase/database";
 import { database } from "../../service/firebase";
+import MessageBox from "./message_box";
+import styled from "styled-components";
+
+const Container = styled.div`
+  display: flex;
+  flex-direction: column-reverse;
+`;
 
 const Messages = () => {
   const [messages, setMessages] = useState([]);
@@ -23,15 +30,17 @@ const Messages = () => {
   }, []);
 
   return (
-    <div className="messages">
+    <Container>
       {messages.map((message) => {
         return (
-          <p key={message.id}>
-            {message.user}:{message.content}
-          </p>
+          <MessageBox
+            key={message.id}
+            username={message.user}
+            content={message.content}
+          />
         );
       })}
-    </div>
+    </Container>
   );
 };
 

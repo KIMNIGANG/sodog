@@ -1,5 +1,4 @@
 import React from "react";
-import Footer from "../footer/footer";
 import Header from "../header/header";
 import Messages from "./messages";
 import SendForm from "./send_form";
@@ -17,7 +16,6 @@ const Main = () => {
 
         <Messages />
       </section>
-      <Footer />
     </section>
   );
 };
