@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/sodog/static/css/main.073c9b0a.css",
+    "main.js": "/sodog/static/js/main.24fbfdaa.js",
+    "static/js/787.efefe6ef.chunk.js": "/sodog/static/js/787.efefe6ef.chunk.js",
+    "static/media/logo.svg": "/sodog/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/sodog/index.html",
+    "main.073c9b0a.css.map": "/sodog/static/css/main.073c9b0a.css.map",
+    "main.24fbfdaa.js.map": "/sodog/static/js/main.24fbfdaa.js.map",
+    "787.efefe6ef.chunk.js.map": "/sodog/static/js/787.efefe6ef.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.073c9b0a.css",
+    "static/js/main.24fbfdaa.js"
+  ]
+}
